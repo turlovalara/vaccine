@@ -10,7 +10,7 @@ window.getVaccineHtml = function(date) {
 
   result = data.map(function(d) {
     return [
-      '<td>' + date.add(d.interval).format('L') + '</td>',
+      '<td>' + date.add(d.interval).format('DD.MM.YYYY') + '</td>',
       '<td>' + d.age + '</td>',
       '<td>' + d.vaccine + '</td>',
     ].join('');
